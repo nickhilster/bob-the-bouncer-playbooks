@@ -1,0 +1,48 @@
+id: digital-arrest
+country: IN
+country_name: India
+name: "Digital Arrest"
+status: verified
+channels:
+  - phone
+  - video-call
+  - whatsapp
+  - sms
+first_seen: "2023"
+scale:
+  text: "123,000+ cases reported in 2024; nearly ₹2,000 crore lost. Supreme Court took suo motu cognisance in 2025."
+  source: "https://nyaaya.org/nyaaya-weekly/digital-arrest-how-to-spot-the-scam-and-protect-your-savings/"
+hook: "A parcel in your name was seized — drugs or fake passports found. A 'CBI officer' will call you shortly."
+script:
+  - "Courier/customs call or WhatsApp: illegal substances found in a parcel booked in your name."
+  - "Handoff to a 'CBI / ED / Narcotics / police officer' on video call (WhatsApp, Skype), in uniform, sometimes with a fake police-station backdrop."
+  - "Fake arrest warrant, FIR, or court order shown on screen."
+  - "'Digital arrest' declared — the victim is told they are under arrest, effective immediately."
+  - "Isolation: stay on camera, tell no one — not family, not a lawyer. Framed as 'fleeing custody' if they disconnect. Lasts hours, sometimes days."
+  - "Demands a 'verification' transfer of savings (UPI, crypto, wire). Promises the money will be returned after the 'investigation'."
+  - "If the victim hesitates: threats of immediate arrest, asset seizure, public humiliation."
+kill_shot: "There is no such thing as 'digital arrest' in Indian law. Real police never arrest anyone over a video call."
+kill_shot_local:
+  hi: "डिजिटल अरेस्ट नाम की कोई चीज़ भारतीय कानून में है ही नहीं। असली पुलिस वीडियो कॉल पर कभी गिरफ़्तार नहीं करती।"
+  mr: "'डिजिटल अरेस्ट' नावाची कोणतीही गोष्ट भारतीय कायद्यात नाही. खरी पोलीस व्हिडिओ कॉलवर कधीही अटक करत नाही."
+safe_path:
+  - "Hang up. Hanging up is always safe."
+  - "Tell your family immediately — the exact opposite of the scammer's order."
+  - "Call 1930, the national cybercrime helpline."
+  - "Report at cybercrime.gov.in."
+  - "If money moved, call your bank immediately."
+helplines:
+  - name: "National Cybercrime Helpline"
+    number: "1930"
+  - name: "Report online"
+    url: "https://cybercrime.gov.in"
+sources:
+  - "https://technicaladda.in/digital-arrest-scam-explained/"
+  - "https://nyaaya.org/nyaaya-weekly/digital-arrest-how-to-spot-the-scam-and-protect-your-savings/"
+  - "https://en.wikipedia.org/wiki/Digital_arrest_scam"
+  - "https://hyderabadmail.com/hyderabad-police-warn-digital-arrest-scams/"
+notes: >
+  The term 'digital arrest' is invented by fraudsters — courts have said plainly
+  there is no such power on paper. Runs on cross-border syndicates using studios
+  modelled on police stations. PM-level public warnings issued. The parcel hook
+  varies (KYC expiry, customs hold) but the video-call 'arrest' is constant.

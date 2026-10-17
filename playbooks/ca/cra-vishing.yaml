@@ -1,0 +1,42 @@
+id: cra-vishing
+country: CA
+country_name: Canada
+name: "CRA impersonation call"
+status: verified
+channels:
+  - phone
+  - voicemail
+  - sms
+first_seen: "2015"
+scale:
+  text: "Long-running; the CRA maintains a standing scam-alert page and the RCMP issues recurring warnings."
+  source: "https://www.canada.ca/en/revenue-agency/corporate/scams-fraud/recognize-scam.html"
+hook: "Robocall or live caller claiming to be the Canada Revenue Agency: you owe back taxes / a criminal case is registered in your name."
+script:
+  - "Automated or live call: 'the CRA' says you owe money, or a lawsuit / criminal case exists against you."
+  - "Threats: arrest, deportation, police at your door, if you don't act immediately."
+  - "Demands immediate payment by: Interac e-transfer, bitcoin/crypto, prepaid credit cards, or gift cards (iTunes, Google Play, etc.)."
+  - "'Stay on the line' while you go buy the cards. Sometimes: don't tell anyone."
+  - "Callback number left on voicemail with a fake badge/case number."
+kill_shot: "The CRA never threatens arrest and never demands gift cards, bitcoin, e-transfer, or prepaid cards. Ever."
+kill_shot_local:
+  fr: "L'ARC ne menace jamais d'arrestation et ne demande jamais de cartes-cadeaux, de bitcoins, de virement Interac ni de cartes prépayées. Jamais."
+safe_path:
+  - "Hang up. Hanging up is always safe."
+  - "Don't pay anything on the call. If you really owed money, you'd have gotten a letter first."
+  - "Verify independently: CRA My Account, or call the real CRA at 1-800-959-8281."
+  - "Report to the Canadian Anti-Fraud Centre: 1-888-495-8501."
+helplines:
+  - name: "CRA (verify for real)"
+    number: "1-800-959-8281"
+  - name: "Canadian Anti-Fraud Centre"
+    number: "1-888-495-8501"
+sources:
+  - "https://www.canada.ca/en/revenue-agency/corporate/scams-fraud/recognize-scam.html"
+  - "https://www.rcmp.ca/en/bc/safety-tips/frauds-and-scams/beware-fraudulent-communications-appear-be-canada-revenue-agency"
+  - "https://briefings.cba.ca/article/tax-season-scams"
+notes: >
+  The CRA will never: send refunds by e-transfer or text, accept crypto,
+  threaten deportation/arrest, use aggressive language, or start a tax
+  conversation over text/WhatsApp. Real CRA sends written notices before
+  calling about amounts owing.
