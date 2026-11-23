@@ -1,0 +1,28 @@
+id: "canada-post-delivery-fee"
+country: "CA"
+country_name: "Canada"
+name: "Canada Post fake delivery fee"
+status: "verified"
+channels:
+  - "sms"
+  - "email"
+hook: "A message claims Canada Post is holding your parcel until you pay a fee."
+script:
+  - "The message creates urgency about a delivery."
+  - "It points you to a link for payment or personal details."
+kill_shot: "Do not use the message link. Open Canada Post’s website or app yourself and check the tracking there."
+kill_shot_local:
+  fr: "N’utilisez pas le lien dans le message. Ouvrez vous-même le site ou l’application de Postes Canada et vérifiez le suivi."
+safe_path:
+  - "Do not click, reply or enter payment details."
+  - "If you are expecting a parcel, open the official Canada Post site or app and use a tracking number from a trusted source. Check there for any duty or taxes."
+  - "If you sent money or gave payment details, contact your financial institution right away using a number you already trust."
+  - "Report the attempt to the Canadian Anti-Fraud Centre. If fraud occurred, also contact your local police."
+helplines:
+  - {"name":"Canada Post: suspicious messages","url":"https://www.canadapost-postescanada.ca/cpc/en/support/kb/company-policies/privacy-security/what-do-to-if-you-get-suspicious-email.page"}
+  - {"name":"Canadian Anti-Fraud Centre","number":"1-888-495-8501","url":"https://antifraudcentre-centreantifraude.ca/report-signalez-eng.htm"}
+sources:
+  - "https://www.canadapost-postescanada.ca/cpc/en/support/kb/company-policies/privacy-security/what-do-to-if-you-get-suspicious-email.page"
+  - "https://antifraudcentre-centreantifraude.ca/report-signalez-eng.htm"
+  - "https://antifraudcentre-centreantifraude.ca/scams-fraudes/victim-victime-eng.htm"
+notes: "Official guidance checked 2026-11-23. Fictional scenario summary; no real case details."

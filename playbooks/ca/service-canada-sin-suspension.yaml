@@ -1,0 +1,30 @@
+id: "service-canada-sin-suspension"
+country: "CA"
+country_name: "Canada"
+name: "Service Canada SIN suspension scare"
+status: "verified"
+channels:
+  - "phone"
+hook: "A caller claims your Social Insurance Number was used in a crime or is being suspended."
+script:
+  - "The caller presents the claim as a government matter."
+  - "They pressure you to disclose your SIN or other personal details."
+kill_shot: "End the call and look up Service Canada yourself. Do not give the caller your SIN."
+kill_shot_local:
+  fr: "Raccrochez et trouvez vous-même les coordonnées de Service Canada. Ne donnez pas votre NAS à la personne qui vous appelle."
+safe_path:
+  - "Hang up without sharing your SIN or payment details."
+  - "For questions about your SIN, use the official Service Canada SIN Program contact page."
+  - "If you already shared your SIN, follow Service Canada’s identity fraud guidance."
+  - "If you sent money or gave payment details, contact your financial institution right away using a number you already trust."
+  - "Report the attempt to the Canadian Anti-Fraud Centre. If fraud occurred, also contact your local police."
+helplines:
+  - {"name":"Service Canada SIN Program","number":"1-866-274-6627","url":"https://www.canada.ca/en/employment-social-development/corporate/contact/sin.html"}
+  - {"name":"Canadian Anti-Fraud Centre","number":"1-888-495-8501","url":"https://antifraudcentre-centreantifraude.ca/report-signalez-eng.htm"}
+sources:
+  - "https://www.canada.ca/en/services/life-events/retirement/protect-yourself-scams-fraud.html"
+  - "https://www.canada.ca/en/employment-social-development/services/sin/fraud-data-breaches.html"
+  - "https://www.canada.ca/en/employment-social-development/corporate/contact/sin.html"
+  - "https://antifraudcentre-centreantifraude.ca/report-signalez-eng.htm"
+  - "https://antifraudcentre-centreantifraude.ca/scams-fraudes/victim-victime-eng.htm"
+notes: "Official guidance checked 2026-11-23. Fictional scenario summary; no real case details."

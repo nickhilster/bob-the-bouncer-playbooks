@@ -34,3 +34,16 @@ New country? New scam? Open a PR with a playbook YAML following the schema, sour
 ## Why this exists
 
 Blocklists answer "is this number bad." Playbooks answer "what is happening to me right now, and what do I do." The first is for software. The second is for people.
+
+## Canada starter pack
+
+- [CRA impersonation calls](playbooks/ca/cra-vishing.yaml)
+- [Service Canada SIN suspension scare](playbooks/ca/service-canada-sin-suspension.yaml)
+- [IRCC impersonation and deportation threats](playbooks/ca/ircc-deportation-threat.yaml)
+- [Canada Post fake delivery fees](playbooks/ca/canada-post-delivery-fee.yaml)
+
+These are Canadian versions of broader patterns. Country labels describe the institutions and reporting routes, not where the scammer is based. Use fictional examples for teaching and check official contacts before printing or recording materials.
+
+## Licence
+
+The repository’s original playbook text, data and schema are available under the [MIT License](LICENSE). Linked source material, third-party names and logos are not licensed by this repository.

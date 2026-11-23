@@ -40,7 +40,7 @@ helplines:
   - name: "Report online"
     url: "https://cybercrime.gov.in"
 sources:                      # every factual claim traceable
-  - "https://www.canada.ca/en/revenue-agency/corporate/scams-fraud/recognize-scam.html"
+  - "https://nyaaya.org/nyaaya-weekly/digital-arrest-how-to-spot-the-scam-and-protect-your-savings/"
 notes: "Free text: context, variants, what's contested."
 ```
 

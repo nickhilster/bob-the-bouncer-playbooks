@@ -1,0 +1,30 @@
+id: "ircc-deportation-threat"
+country: "CA"
+country_name: "Canada"
+name: "IRCC impersonation and deportation threat"
+status: "verified"
+channels:
+  - "phone"
+  - "email"
+hook: "Someone claiming to work for immigration says you could lose your status unless you pay immediately."
+script:
+  - "The person claims there is a problem with your immigration file."
+  - "They threaten deportation or arrest to pressure you into paying or sharing personal details."
+kill_shot: "Do not pay to stop a deportation threat. End the conversation and contact IRCC directly."
+kill_shot_local:
+  fr: "Ne payez pas pour faire cesser une menace d’expulsion. Mettez fin à la conversation et communiquez directement avec IRCC."
+safe_path:
+  - "End the call or message exchange. Do not share your file number, personal details or payment information."
+  - "Use Canada.ca to find IRCC’s official contact options or check your application through the official service."
+  - "If you sent money or gave payment details, contact your financial institution right away using a number you already trust."
+  - "Report the attempt to the Canadian Anti-Fraud Centre. If fraud occurred, also contact your local police."
+helplines:
+  - {"name":"IRCC: official contact options","url":"https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc.html"}
+  - {"name":"Canadian Anti-Fraud Centre","number":"1-888-495-8501","url":"https://antifraudcentre-centreantifraude.ca/report-signalez-eng.htm"}
+sources:
+  - "https://www.canada.ca/en/immigration-refugees-citizenship/services/protect-fraud/newcomers.html"
+  - "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1218&top=31"
+  - "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc.html"
+  - "https://antifraudcentre-centreantifraude.ca/report-signalez-eng.htm"
+  - "https://antifraudcentre-centreantifraude.ca/scams-fraudes/victim-victime-eng.htm"
+notes: "Official guidance checked 2026-11-23. Fictional scenario summary; no real case details."
